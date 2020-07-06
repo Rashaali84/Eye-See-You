@@ -15,8 +15,8 @@ Building this site one step at a time according to the following steps .
 
 **As a team we need to have a repository where all team members have access on,and we need to have a clear abstract about the whole project , clear detailed issues and user-stories as well .**
 
-- Pick on of the team members to be the team owner .
-- Create a parent repository on the of the team members git-hub account to be the owner .
+- Pick one of the team members to be the team owner .
+- Create a parent repository on one of the team members git-hub account to be the owner .
 - Add other team members as collaborators .
 - Work on the development strategy.
 - Create a project board .
@@ -114,25 +114,25 @@ Building this site one step at a time according to the following steps .
 - As a user I want to have a tab where I can have a description about the whole website the available features and the store activities .
 - Edit both `Client\public` and `Client\src`, to add necessary assets and css styles , html and js files .. changes can be applied later for in progress production development .
 
-## 12. User Story:Testing phase.
+## 13. User Story:Testing phase.
 
 **As a software engineer I want to be sure that all user stories are function very well and passes all happy paths as a minimum threshold**
 
 - Edit both `Client\public` and `Client\src`, to add necessary assets and css styles , html and js files .. changes can be applied later for testing and bug fixing reasons
 
-## 12. User Story:Deployment.
+## 14. User Story:Deployment.
 
 **As a software engineer I want to have to deploy the portal to be accessible online for team members clients and stakeholders**
 
 - Edit both `Client\public` and `Client\src`, to add necessary assets and css styles , html and js files .. changes can be applied later for deploying and bug fixing reasons.
 
-## 13. User Story:Create Presentation and Documents.
+## 15. User Story:Create Presentation and Documents.
 
 **As a HYF student I want to create a presentation and a document for the whole project for better presentation to the coaches**
 
 - Create the power point presentation and documents , Flyers needed for the Demo day .
 
-## 14. User Story:Create a video for the whole use cases.
+## 16. User Story:Create a video for the whole use cases.
 
 **As a HYF student I want to create videos for the whole project for better presentation to the coaches**
 
