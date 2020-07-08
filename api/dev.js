@@ -14,12 +14,7 @@ devServer.use((req, res, next) => {
 devServer.use('/api', api);
 
 
-// this line to serve css and html files
-devServer.use(express.static(path.join(__dirname, '../client/public')));
-devServer.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '../client/public', 'index.html'));
-  //res.send('frontend');
-});
+
 
 
 const port = 5000;
