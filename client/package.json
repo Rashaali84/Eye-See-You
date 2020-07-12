@@ -12,7 +12,7 @@
     "react-scripts": "3.4.0"
   },
   "scripts": {
-    "start": "SKIP_PREFLIGHT_CHECK=true react-scripts start",
+    "start": "react-scripts start",
     "build": "SKIP_PREFLIGHT_CHECK=true react-scripts build",
     "test": "SKIP_PREFLIGHT_CHECK=true react-scripts test  --collectCoverage=true",
     "test:watch": "SKIP_PREFLIGHT_CHECK=true react-scripts test --watch  --collectCoverage=true",
@@ -22,5 +22,5 @@
     "extends": "react-app"
   },
   "browserslist": [],
-  "proxy": "http://localhost:5000"
+  "proxy": "http://127.0.0.1:5000"
 }
