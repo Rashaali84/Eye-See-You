@@ -1,12 +1,14 @@
 const express = require('express');
 
 const app = express();
+const handlers = require('./controllers');
 
 /**
 * Just a simple test endpoint to demo how to test with Jest
 **/
-app.get('/test', function (req, res) {
-    res.send('Welcome Test!');
-});
+//router.get('/services', controllers.getServices);
+
+app.get('/services', handlers.getServices);
+
 
 module.exports = app;
