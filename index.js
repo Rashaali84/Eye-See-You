@@ -18,6 +18,7 @@ app.use((req, res, next) => {
 
 app.use('/', express.static(__dirname + '/client/build/'))
 
+
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/client/build/index.html');
 });
@@ -25,4 +26,4 @@ app.get('/', (req, res) => {
 app.use('/api', api);
 
 const port = process.env.PORT || 5000;
-app.listen(port, () => console.log(`listening at http://localhost:${port}`));
+app.listen(port, () => console.log(`listening at http://127.0.0.1:${port}`));
