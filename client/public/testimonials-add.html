@@ -133,70 +133,58 @@
             <div class="col-lg-4">
               <div class="info">
                 <div class="address">
-                  <i class="icofont-google-map"></i>
-                  <h4>Location:</h4>
-                  <p>A108 Adam Street, New York, NY 535022</p>
+                  <i class="icofont-comment"></i>
+                  <h4>Send your review:</h4>
+                  <p>Please share with us your review</p>
                 </div>
 
                 <div class="email">
                   <i class="icofont-envelope"></i>
-                  <h4>Email:</h4>
-                  <p>info@example.com</p>
+                  <h4>Email us :</h4>
+                  <p>info@eyeseeyou.com</p>
                 </div>
 
                 <div class="phone">
                   <i class="icofont-phone"></i>
-                  <h4>Call:</h4>
-                  <p>+1 5589 55488 55s</p>
+                  <h4>Call us on :</h4>
+                  <p>+32 589 55488 55s</p>
                 </div>
               </div>
             </div>
 
             <div class="col-lg-8 mt-5 mt-lg-0">
-              <form
-                action="forms/contact.php"
-                method="post"
-                role="form"
-                class="php-email-form"
-              >
-                <div class="form-row">
-                  <div class="col-md-6 form-group">
-                    <input
-                      type="text"
-                      name="name"
-                      class="form-control"
-                      id="name"
-                      placeholder="Your Name"
-                      data-rule="minlen:4"
-                      data-msg="Please enter at least 4 chars"
-                    />
-                    <div class="validate"></div>
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <textarea
+              <div class="form-row">
+                <div class="col-md-6 form-group">
+                  <input
+                    type="text"
+                    name="name"
                     class="form-control"
-                    name="message"
-                    id="message"
-                    rows="5"
-                    data-rule="required"
-                    data-msg="Please write something for us"
-                    placeholder="write your review here"
-                  ></textarea>
+                    id="name"
+                    placeholder="Your Name"
+                    data-rule="minlen:4"
+                    data-msg="Please enter at least 4 chars"
+                  />
                   <div class="validate"></div>
                 </div>
-                <div class="mb-3">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">
-                    Your message has been sent. Thank you!
-                  </div>
-                </div>
-                <div class="text-center">
-                  <button type="submit" id="submit-review">Send your review</button>
-                </div>
-              </form>
+              </div>
+
+              <div class="form-group">
+                <textarea
+                  class="form-control"
+                  name="message"
+                  id="message"
+                  rows="5"
+                  data-rule="required"
+                  data-msg="Please write something for us"
+                  placeholder="write your review here"
+                ></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="text-center">
+                <button type="submit" id="submit-review">
+                  Send your review
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -206,126 +194,7 @@
       <!-- ======= Testimonials Section ======= -->
       <section id="testimonials" class="testimonials">
         <div class="container">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="testimonial-item">
-                <img
-                  src="assets/img/testimonials/testimonials-1.jpg"
-                  class="testimonial-img"
-                  alt=""
-                />
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Proin iaculis purus consequat sem cure digni ssim donec
-                  porttitora entum suscipit rhoncus. Accusantium quam, ultricies
-                  eget id, aliquam eget nibh et. Maecen aliquam, risus at
-                  semper.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div>
-
-            <div class="col-lg-6">
-              <div class="testimonial-item mt-4 mt-lg-0">
-                <img
-                  src="assets/img/testimonials/testimonials-2.jpg"
-                  class="testimonial-img"
-                  alt=""
-                />
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Export tempor illum tamen malis malis eram quae irure esse
-                  labore quem cillum quid cillum eram malis quorum velit fore
-                  eram velit sunt aliqua noster fugiat irure amet legam anim
-                  culpa.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div>
-
-            <div class="col-lg-6">
-              <div class="testimonial-item mt-4">
-                <img
-                  src="assets/img/testimonials/testimonials-3.jpg"
-                  class="testimonial-img"
-                  alt=""
-                />
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Enim nisi quem export duis labore cillum quae magna enim sint
-                  quorum nulla quem veniam duis minim tempor labore quem eram
-                  duis noster aute amet eram fore quis sint minim.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div>
-
-            <div class="col-lg-6">
-              <div class="testimonial-item mt-4">
-                <img
-                  src="assets/img/testimonials/testimonials-4.jpg"
-                  class="testimonial-img"
-                  alt=""
-                />
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa
-                  multos export minim fugiat minim velit minim dolor enim duis
-                  veniam ipsum anim magna sunt elit fore quem dolore labore
-                  illum veniam.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div>
-
-            <div class="col-lg-6">
-              <div class="testimonial-item mt-4">
-                <img
-                  src="assets/img/testimonials/testimonials-5.jpg"
-                  class="testimonial-img"
-                  alt=""
-                />
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua
-                  veniam tempor noster veniam enim culpa labore duis sunt culpa
-                  nulla illum cillum fugiat legam esse veniam culpa fore nisi
-                  cillum quid.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div>
-
-            <div class="col-lg-6">
-              <div class="testimonial-item mt-4">
-                <img
-                  src="assets/img/testimonials/testimonials-6.jpg"
-                  class="testimonial-img"
-                  alt=""
-                />
-                <h3>Emily Harison</h3>
-                <h4>Store Owner</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Eius ipsam praesentium dolor quaerat inventore rerum odio.
-                  Quos laudantium adipisci eius. Accusamus qui iste cupiditate
-                  sed temporibus est aspernatur. Sequi officiis ea et quia
-                  quidem.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div>
-          </div>
+          <div id="results"></div>
         </div>
       </section>
       <!-- End Testimonials Section -->
@@ -458,5 +327,6 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script src="app/testimonials/init-testimonials.js"></script>
   </body>
 </html>
