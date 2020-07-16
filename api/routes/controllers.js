@@ -12,6 +12,33 @@ const handlers = {
             }
             res.json(rows)
         });
+    },
+    getTestmonials: async (req, res) => {
+        const sql = `SELECT * FROM testimonials`;
+
+        db.all(sql, (err, rows) => {
+            if (err) {
+                res.status(400).json({ "error": err.message });
+                return;
+            }
+            res.json(rows)
+        });
+    },
+    postTestmonials: async (req, res) => {
+        console.log(req.body.name);
+        const sql = ` INSERT INTO testimonials
+                       (name , message)
+                       VALUES
+                      ('${req.body.name}', '${req.body.message}')
+                       `;
+
+        db.all(sql, (err, rows) => {
+            if (err) {
+                res.status(400).json({ "error": err.message });
+                return;
+            }
+            res.json(rows)
+        });
     }
 }
 

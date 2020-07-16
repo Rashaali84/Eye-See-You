@@ -16,5 +16,6 @@ app.use(cookieParser());
 app.use('/', require('./routes/home.js'));
 app.use('/', require('./routes/login.js'));
 app.use('/', require('./routes/services.js'));
+app.use('/', require('./routes/testimonials.js'));
 
 module.exports = app;
