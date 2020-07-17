@@ -136,7 +136,7 @@
               marginheight="0"
               marginwidth="0"
               src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Rue%20Froissart%205%20Brussels+(Eye%20See%20You)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-              width="700"
+              width="1110"
               height="400"
               frameborder="0"
             ></iframe>
@@ -164,26 +164,21 @@
 
                 <div class="phone">
                   <i class="icofont-phone"></i>
-                  <h4>Call:</h4>
+                  <h4>Telephone:</h4>
                   <p>02 230 73 20</p>
                 </div>
               </div>
             </div>
 
             <div class="col-lg-8 mt-5 mt-lg-0">
-              <form
-                action="forms/contact.php"
-                method="post"
-                role="form"
-                class="php-email-form"
-              >
+             
                 <div class="form-row">
                   <div class="col-md-6 form-group">
                     <input
                       type="text"
                       name="name"
                       class="form-control"
-                      id="name"
+                      id="Name"
                       placeholder="Your Name"
                       data-rule="minlen:4"
                       data-msg="Please enter at least 4 chars"
@@ -195,7 +190,7 @@
                       type="email"
                       class="form-control"
                       name="email"
-                      id="email"
+                      id="Email"
                       placeholder="Your Email"
                       data-rule="email"
                       data-msg="Please enter a valid email"
@@ -208,7 +203,7 @@
                     type="text"
                     class="form-control"
                     name="subject"
-                    id="subject"
+                    id="Subject"
                     placeholder="Subject"
                     data-rule="minlen:4"
                     data-msg="Please enter at least 8 chars of subject"
@@ -218,7 +213,7 @@
                 <div class="form-group">
                   <textarea
                     class="form-control"
-                    name="message"
+                    id="Message"
                     rows="5"
                     data-rule="required"
                     data-msg="Please write something for us"
@@ -234,7 +229,7 @@
                   </div>
                 </div>
                 <div class="text-center">
-                  <button type="submit">Send Message</button>
+                  <button id="submit-btn" type="submit">Send Message</button>
                 </div>
               </form>
             </div>
