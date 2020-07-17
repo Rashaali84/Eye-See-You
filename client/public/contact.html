@@ -171,7 +171,12 @@
             </div>
 
             <div class="col-lg-8 mt-5 mt-lg-0">
-             
+              <form
+                action="/api/db/eyeseeyou.sqlite"
+                method="post"
+                role="form"
+                class="php-email-form"
+              >
                 <div class="form-row">
                   <div class="col-md-6 form-group">
                     <input
@@ -222,8 +227,6 @@
                   <div class="validate"></div>
                 </div>
                 <div class="mb-3">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
                   <div class="sent-message">
                     Your message has been sent. Thank you!
                   </div>
@@ -247,12 +250,12 @@
           <div class="row">
             <div class="col-lg-3 col-md-6">
               <div class="footer-info">
-                <h3>Sailor</h3>
+                <h3>Eye See You</h3>
                 <p>
-                  A108 Adam Street <br />
-                  NY 535022, USA<br /><br />
-                  <strong>Phone:</strong> +1 5589 55488 55<br />
-                  <strong>Email:</strong> info@example.com<br />
+                  Froissart 5, 1040 <br />
+                  Brussels, Belgium<br /><br />
+                  <strong>Phone:</strong> +322 230 73 20<br />
+                  <strong>Email:</strong> info@eyeseeyou.be<br />
                 </p>
                 <div class="social-links mt-3">
                   <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -286,11 +289,11 @@
                 </li>
                 <li>
                   <i class="bx bx-chevron-right"></i>
-                  <a href="#">Terms of service</a>
+                  <a href="#">Products</a>
                 </li>
                 <li>
                   <i class="bx bx-chevron-right"></i>
-                  <a href="#">Privacy policy</a>
+                  <a href="#">Vision Test</a>
                 </li>
               </ul>
             </div>
@@ -299,22 +302,20 @@
               <h4>Our Services</h4>
               <ul>
                 <li>
-                  <i class="bx bx-chevron-right"></i> <a href="#">Web Design</a>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Try at Home</a>
                 </li>
                 <li>
                   <i class="bx bx-chevron-right"></i>
-                  <a href="#">Web Development</a>
+                  <a href="#">VIU Flagshipstores</a>
                 </li>
                 <li>
                   <i class="bx bx-chevron-right"></i>
-                  <a href="#">Product Management</a>
-                </li>
-                <li>
-                  <i class="bx bx-chevron-right"></i> <a href="#">Marketing</a>
+                  <a href="#">Same Day Glasses</a>
                 </li>
                 <li>
                   <i class="bx bx-chevron-right"></i>
-                  <a href="#">Graphic Design</a>
+                  <a href="#">Adjust Your Glasses</a>
                 </li>
               </ul>
             </div>
@@ -322,8 +323,8 @@
             <div class="col-lg-4 col-md-6 footer-newsletter">
               <h4>Our Newsletter</h4>
               <p>
-                Tamen quem nulla quae legam multos aute sint culpa legam noster
-                magna
+                To stay updated about our services and products sign up for our
+                newslettter
               </p>
               <form action="" method="post">
                 <input type="email" name="email" /><input
@@ -338,7 +339,7 @@
 
       <div class="container">
         <div class="copyright">
-          &copy; Copyright <strong><span>Sailor</span></strong
+          &copy; Copyright <strong><span>Eye See You</span></strong
           >. All Rights Reserved
         </div>
         <div class="credits">
@@ -366,5 +367,6 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script type="text/javascript" src="app/contacts/init-contact.js"></script>
   </body>
 </html>
