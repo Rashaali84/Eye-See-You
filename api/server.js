@@ -18,5 +18,7 @@ app.use('/', require('./routes/login.js'));
 app.use('/', require('./routes/services.js'));
 app.use("/", require("./routes/products.js"));
 app.use('/', require('./routes/testimonials.js'));
+app.use("/", require("./routes/contacts.js"));
+
 
 module.exports = app;
