@@ -65,6 +65,16 @@ const handlers = {
       }
       res.json("New message is sent.");
     });
+  },
+  getContacts: (req, res) => {
+    const sql = `Select * from contacts`;
+    db.all(sql, (err, rows) => {
+      if (err) {
+        res.status(400).json({ "error": err.message });
+        return;
+      }
+      res.json(rows)
+    });
   }
 };
 
