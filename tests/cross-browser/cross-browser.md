@@ -7,8 +7,10 @@ This type of testing allows developers to review web-project in different custom
 - Goodle Chrome
 
 ## Safari version
-[safari](https://raw.githubusercontent.com/Rashaali84/Eye-See-You/products/tests/cross-browser/Safari.png)
+![safari](https://raw.githubusercontent.com/Rashaali84/Eye-See-You/products/tests/cross-browser/Safari.png)
 
 ## Firefox version
+![firefox](https://raw.githubusercontent.com/Rashaali84/Eye-See-You/products/tests/cross-browser/Firefox.png)
 
 ## Google Chrome version
+![google chrome](https://raw.githubusercontent.com/Rashaali84/Eye-See-You/products/tests/cross-browser/Google-Chrome.png)
