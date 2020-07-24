@@ -6,11 +6,16 @@ This type of testing allows developers to review web-project in different custom
 - Firefox
 - Goodle Chrome
 
+For the following examples, it's visible few shade differences, but the functionality stays the same on all tested platforms.
+
 ## Safari version
+
 ![safari](https://raw.githubusercontent.com/Rashaali84/Eye-See-You/products/tests/cross-browser/Safari.png)
 
 ## Firefox version
+
 ![firefox](https://raw.githubusercontent.com/Rashaali84/Eye-See-You/products/tests/cross-browser/Firefox.png)
 
 ## Google Chrome version
+
 ![google chrome](https://raw.githubusercontent.com/Rashaali84/Eye-See-You/products/tests/cross-browser/Google-Chrome.png)
