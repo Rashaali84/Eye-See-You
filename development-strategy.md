@@ -41,6 +41,12 @@ Building this site one step at a time according to the following steps .
 
 - Come up with a wow factor UI elements ( all ideas are accepted ) .
 - Edit both `Client\public` and `Client\src`, to add necessary assets and css styles.
+- Check and verify interface correctness (links places, nomination and execution, styles consistency, colour accordance, user-friendly activities, visibility etc), design and consistency
+
+### `Testing & code review`
+
+- Test cross-browser display option in different platforms.
+- Make cross collaborators code review
 
 ## 4. User Story:Create a Home-page with basic information tabs and links to all other pages available in the website
 
