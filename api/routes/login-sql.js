@@ -45,12 +45,12 @@ router.get('/admin', (req, res) => {
     sess = req.session;
     if (sess.email) {
 
-        res.json(`<h3>Hello ${sess.email} </h3><a href="javascript:logOut();">Logout</a>`);
+        res.json(`<p class="p-2" > Hello  </p> <p class="p-2" >  ${sess.email} </p><p class="p-2"> <a  href="javascript:logOut();">logout</a></p>`);
 
     }
     else {
 
-        res.json('<h4>Please login first.</h4><a href=' + '/' + '>Login</a>');
+        res.json('<a  class="form-check-input" href=' + '../login.html' + '>Login</a>');
 
     }
 });

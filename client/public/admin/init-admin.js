@@ -54,6 +54,7 @@ function CreateTableFromJson(jsonRows) {
     }
     // CREATE DYNAMIC TABLE.
     var table = document.createElement("table");
+    table.className += "table table-bordered";
     // CREATE HTML TABLE HEADER ROW USING THE EXTRACTED HEADERS ABOVE.
     var tr = table.insertRow(-1);
     tr.style.border = "1px solid black";                   // TABLE ROW.
@@ -85,4 +86,14 @@ function CreateTableFromJson(jsonRows) {
 
     return table;
 
+}
+
+function logOut() {
+    fetch("/api/logout/", {
+        method: "GET",
+    }).then(() => {
+        var divContainer = document.getElementById("results");
+        divContainer.innerHTML = "";
+        window.location.assign('../login.html')
+    });
 }
