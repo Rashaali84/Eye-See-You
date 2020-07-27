@@ -73,7 +73,7 @@ class QuizList extends Component {
             },
             {
               name: "Right Eye-Sight Test",
-              questions: 8,
+              questions: 6,
 
               quiz_questions: [
                 {
@@ -140,7 +140,7 @@ class QuizList extends Component {
     this.backToDashboard = this.backToDashboard.bind(this); //go back to the main screen
   }
 
-  // saving selected quiz to state
+  // saving selected quiz to state quiz info
   updateQuizInfoState(index) {
     const { quiz_info } = this.state;
     this.setState({
@@ -149,7 +149,7 @@ class QuizList extends Component {
     });
   }
 
-  // back button function
+  // back button function list all quizes parent 
   back() {
     this.setState({ renderSelectedTestObj: false }); // back to quiz list page
   }
@@ -157,7 +157,7 @@ class QuizList extends Component {
   backToDashboard(param) {
     this.setState({ renderMCQs: param });
   }
-
+  //render the sub test
   renderQuizInfo() { // render all tests for that quiz
     const { saveSelectedQuizObj } = this.state;
     return (
@@ -208,7 +208,7 @@ class QuizList extends Component {
       </div>
     );
   }
-
+  //render the parent quiz
   renderQuizList() {
     const { quiz_list } = this.state;
     return (
@@ -229,8 +229,8 @@ class QuizList extends Component {
                   <div className="card-body">
                     <h5 className="card-title">{qList.quizName} </h5>
                     <p className="card-text">
-                      Test your skills of {qList.quizName} by taking this small quiz.
-                      It has {qList.tests} sub-tests.
+                      Test your eyes using {qList.quizName} by taking this small quiz.
+                      It has {qList.tests} sub-tests , Please read the below instructions before starting.
                     </p>
                     <button
                       className="btn btn-info"

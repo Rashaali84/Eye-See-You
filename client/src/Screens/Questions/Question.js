@@ -20,16 +20,17 @@ class Question extends Component {
       opt2: currentQuesObj.tests[currentTestIndex].quiz_questions[0].option2,
       opt3: currentQuesObj.tests[currentTestIndex].quiz_questions[0].option3,
       opt4: currentQuesObj.tests[currentTestIndex].quiz_questions[0].option4,
-      i: 0,
-      correct: 0,
-      score: 0
+      i: 0, // index of the question 
+      correct: 0, // increase the correct answer
+      score: 0  // percentage 
     };
 
-    this.next = this.next.bind(this);
+    this.next = this.next.bind(this); // the function which loads the question 
 
   }
 
-  next() {
+  next() { // bind this to the next button in render
+    // fetch the data from props and state 
     const { currentQuesObj, currentTestIndex } = this.props;
     var { i, correct, score } = this.state;
 
@@ -41,20 +42,16 @@ class Question extends Component {
     } else {
       if (quiz_questions[i].answer.match(radioBtn.value)) {
         console.log("quiz_questions[i].answer**", quiz_questions[i].answer);
-        // console.log(
-        //   "answer**",
-        //   quiz_questions[i].answer
-        // );
+
         this.setState({ correct: ++correct });
       }
 
       if (quiz_questions.length - 1 === i) {
+        //hide the results and show quiz question 
         document.getElementById("quizContainer").style.display = "none";
         document.getElementById("resultContainer").style.display = "block";
-        // console.log("value equal");
-        // console.log(this.state.correct);
-        score = correct * (100 / quiz_questions.length).toFixed(2);
-        console.log(quiz_questions.length);
+        score = (correct * (100 / quiz_questions.length)).toFixed(0);
+        console.log(quiz_questions.length, correct);
         this.setState({ score });
       } else {
         // document.querySelector("input[name='option']:checked").checked = false;
@@ -167,10 +164,10 @@ class Question extends Component {
                 <h3>{currentQuesObj.tests[currentTestIndex].name}</h3>
 
                 <p>Questions: {currentQuesObj.tests[currentTestIndex].questions}</p>
-                {score < 20 ? (
+                {score < 50 ? (
                   <h3>Your Eye Scored {score}% , You need to consult a doctor immediately.</h3>
                 ) : (
-                    <h3>Your Eye Scored {score}%</h3>
+                    <h3>Your eye sight is perfectly fine ! Your Eye Scored {score}%</h3>
                   )}
                 <hr />
 
