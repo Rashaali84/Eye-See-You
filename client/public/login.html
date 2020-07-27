@@ -2,63 +2,34 @@
   <head>
     <meta charset="utf-8" />
     <!-- Latest compiled and minified CSS -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-      crossorigin="anonymous"
-    />
-
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="./favicon.ico" />
 
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="%PUBLIC_URL%/favicon_io/apple-touch-icon.png"
+      href="./favicon_io/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="%PUBLIC_URL%/favicon_io/favicon-32x32.png"
+      href="./favicon_io/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="%PUBLIC_URL%/favicon_io/favicon-16x16.png"
+      href="./favicon_io/favicon-16x16.png"
     />
     <link rel="manifest" href="/site.webmanifest" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-
-    <!-- Design for the website-->
-
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
     <title>Eye See You</title>
     <meta content="" name="descriptison" />
     <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
     <!-- Google Fonts -->
     <link
@@ -167,37 +138,42 @@
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top">
       <div class="container d-flex align-items-center">
-        <h1 class="logo"><a href="index.html">Eye See You</a></h1>
+        <h1 class="logo">
+          <a href="index.html"
+            ><img
+              alt
+              src="http://eyeseeyou.be/wp-content/themes/EyeseeYou/images/logo@2x.png"
+          /></a>
+        </h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
         <nav class="nav-menu d-none d-lg-block">
           <ul>
             <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
 
-            <li><a href="products.html">Products</a></li>
-            <li><a href="testimonials-add.html"> Reviews</a></li>
-
-            <li><a href="blog.html">About Us</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-
-            <li><div id="auth"></div></li>
             <li>
-              <div id="loginForm">
+              <div id="loginForm" class="form-check form-check-inline">
                 <input
+                  class="form-check-input"
                   type="text"
-                  size="40"
+                  size="18"
                   placeholder="Type your email"
                   id="email"
                 /><br />
                 <input
+                  class="form-check-input"
                   type="password"
-                  size="40"
+                  size="18"
                   placeholder="Type your password"
                   id="password"
-                /><br />
-                <input type="button" value="Submit" id="submit" />
+                />
+                <input
+                  class="form-check-input"
+                  type="button"
+                  value="sign in"
+                  id="submit"
+                />
               </div>
             </li>
           </ul>
@@ -208,17 +184,13 @@
     <!-- End Header -->
 
     <main id="main">
-      <br />
-      <br />
-      <br />
       <!-- ======= Breadcrumbs ======= -->
       <section id="breadcrumbs" class="breadcrumbs">
         <div class="container">
           <div class="d-flex justify-content-between align-items-center">
-            <h2>Team</h2>
+            <h2>Administrators - Panel</h2>
             <ol>
-              <li><a href="index.html">Home</a></li>
-              <li>Team</li>
+              <li><div class="d-flex" id="auth"></div></li>
             </ol>
           </div>
         </div>
@@ -231,22 +203,22 @@
             <div class="col-lg-6">
               <div class="member d-flex align-items-start">
                 <div class="member-info">
-                  <div id="admin-links">
-                    <p>
-                      As an Admin you have access to the following links
-                    </p>
-
-                    <ul>
-                      <li>
-                        <a href="./admin/index.html"
-                          ><h3>Show Message from Clients - click here</h3></a
-                        >
-                      </li>
-                    </ul>
-                  </div>
                   <p class="font-italic">
                     Please login as an admin to have access to the admin panel
                   </p>
+                  <div id="admin-links">
+                    <p>
+                      As an Admin you have access to the following links
+                     
+                    </p>
+ <br/> 
+                   <ul class="list-group">
+
+                        <li class="list-group-item"><a class="btn btn-link" href="./admin/index.html"
+                          >Show Message from Clients</a</li>
+                     
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
