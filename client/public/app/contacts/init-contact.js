@@ -29,10 +29,15 @@ function sendEmail() {
         return res.json();
       })
       .then((records) => {
+        //Clear text fields if succeeded
+        document.getElementById('Name').value = '';
+        document.getElementById('Email').value = '';
+        document.getElementById('Subject').value = '';
+        document.getElementById('Message').value = '';
         alert("Your message has been sent!");
       })
       .catch((err) => {
-        alert("Your message hasn't been sent!");
+        alert("Your message hasn't been sent! Try again later.");
       });
   }
 }

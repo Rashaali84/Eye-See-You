@@ -161,9 +161,9 @@ class QuizList extends Component {
   renderQuizInfo() { // render all tests for that quiz
     const { saveSelectedQuizObj } = this.state;
     return (
-      <div>
-        <h3>Choose {saveSelectedQuizObj.quizName} </h3>
-
+      <div class="text-center">
+        <h3 class="text-left" >Choose {saveSelectedQuizObj.quizName} </h3>
+        <br />
         <div className="row">
           {saveSelectedQuizObj.tests.map((test, i) => {
             return (
@@ -201,10 +201,12 @@ class QuizList extends Component {
             );
           })}
         </div>
-
-        <button className="btn btn-secondary" onClick={this.back}>
-          Back <i className="fa fa-backward" />
-        </button>
+        <br />
+        <div class="text-right mb-3">
+          <button className="btn btn-secondary" onClick={this.back}>
+            Back <i className="fa fa-backward" />
+          </button>
+        </div>
       </div>
     );
   }

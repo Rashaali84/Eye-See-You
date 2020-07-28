@@ -53,6 +53,9 @@ function sendSubmit() {
                 document.getElementById('message').value = '';
                 alert(`Your review is sent successfully ! `)
 
+            }).then(() => {
+
+                window.location.assign('./testimonials-add.html')
             })
             .catch(err => console.error(err));
     }
