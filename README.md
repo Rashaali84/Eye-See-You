@@ -14,7 +14,8 @@
 
 ## General info
 
- This project is a website to a real shop-glasses Brussels http://eyeseeyou.be/ , It is a new way to redesign the old website and add more functionalty.
+ Live Link fir the project https://eyeseeu.herokuapp.com/index.html
+ This project is a website to a real shop-glasses Brussels , It is a new way to redesign the old website and add more functionalty.
 
 ## Technologies
 
