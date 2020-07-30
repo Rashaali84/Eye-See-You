@@ -14,23 +14,17 @@
 
 ## General info
 
-This project is a study case for this video tutorial https://www.youtube.com/watch?v=m_HJ3juuFvo for `john-smilga`. for freecodecamp.org .
-
-The achievements of the project are:
-Get more wrapped up concepts about classes in JS and how to use `this` Keyword
-how to parse through DOM and use the data-id property in DOM .
-Here is a demo for the final project [here](https://rashaali84.github.io/budget-app/)
+This project is a website to a real shop-glasses Brussels http://eyeseeyou.be/ , It is a new way to redesign the old website and add more functionalty.
 
 ## Technologies
 
 This project is created with:
 
-- ECMAScript6
-- HTML5 /CSS3
+- HTML5,CSS3,REACT,JavaScript,NodeJs,SQL DB .
 
 ## Setup
 
-Clone this repository and start using it with your editor.
+Clone this repository and start using it with your visual-studio editor.
 
 ## Screen Capture of Project
 
