@@ -1,6 +1,6 @@
-# Organized for Deployment
+# Organized for Deployment - EYE SEE You -Technical document for developers
 
-A model of how you can set up your project for development, testing & deployment.
+A step by step plan of how you can set up your project for development, testing & deployment.
 
 ### Contents
 
@@ -21,6 +21,11 @@ A model of how you can set up your project for development, testing & deployment
 
 ---
 
+## SQL
+
+Attach the db file in `db/eyeseeyou.sqllite` using sql lite editor
+It has four tables(services,products,contact,users).
+
 ## Directory Structure
 
 ```
@@ -35,13 +40,23 @@ A model of how you can set up your project for development, testing & deployment
 |   ├── middleware.js
 |   ├── models
 |   │   └── User.js
+
 |   ├── routes
 |   │   ├── home.js
 |   │   ├── login.js
 |   │   └── test.js
+        └── contacts.js
+        └── controllers.js
+        └── home.js
+        └── products.js
+        └── services.js
+        └── testimonials.js
 |   ├── server.js
 |   └── __test__
 |       └── example.spec.js`
+    ├── dev.js
+    ├── db-connections.js
+    ├── middleware.js
 |
 ├── client/
 │   ├── build
