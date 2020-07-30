@@ -184,7 +184,7 @@ class QuizList extends Component {
                     </p>
 
                     <button
-                      className="btn btn-success"
+                      className="btn btn-secondary"
                       onClick={() => {
                         this.setState({
                           renderMCQs: true,
@@ -235,7 +235,7 @@ class QuizList extends Component {
                       It has {qList.tests} sub-tests , Please read the below instructions before starting.
                     </p>
                     <button
-                      className="btn btn-info"
+                      className="btn btn-secondary"
                       onClick={this.updateQuizInfoState.bind(this, index)}
                     >
                       Next <i className=" fa fa-paper-plane" />
