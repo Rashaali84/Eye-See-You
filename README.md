@@ -1,10 +1,13 @@
-# BUDGET-APP
+# EYE-See-You
 
 ## Table of contents
 
 - [General info](#general-info)
 - [Technologies](#technologies)
+- [Use Case Diagram](#usecase)
+- [Architect Design Diagram](#architect)
 - [Setup](#setup)
+- [Demo of Project](#demo)
 - [Screen Capture of Project](#screen-capture-of-project)
 - [Project Status](#project-status)
 - [Contact](#contact)
