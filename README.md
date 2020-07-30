@@ -28,7 +28,7 @@ Clone this repository and start using it with your visual-studio editor.
 
 ## Screen Capture of Project
 
-![Screenshot](shared-content/assets/img/budg.png)
+![Screenshot](https://github.com/Rashaali84/Eye-See-You/blob/master/homepage.png)
 
 ## Project Status
 
