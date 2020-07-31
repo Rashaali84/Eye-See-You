@@ -215,7 +215,7 @@ class QuizList extends Component {
     const { quiz_list } = this.state;
     return (
       <div>
-        <h3><span className="">Visual Eye-sight Test</span></h3>
+        <h3 class="text-center" ><span >Visual Eye-sight Test</span></h3>
         <br />
 
         <div className="row">
