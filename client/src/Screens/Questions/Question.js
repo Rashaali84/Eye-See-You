@@ -84,93 +84,95 @@ class Question extends Component {
     const { question, opt1, opt2, opt3, opt4, score, i } = this.state;
     const { currentQuesObj, currentTestIndex } = this.props;
     return (
-      <div>
-        <div className="col-md-12">
-          <div className="col" id="content">
-            <div id="quizContainer">
-              <div className="modal-header">
-                <h5>
-                  <i className="fa fa-question-circle" />
-                  <span>   <img className="rounded mx-auto d-block"
+      <div class="container-fluid">
+        <div class="row">
+          <div className="col-lg-12 col-md-6 col-xs-12">
+            <div className="col" id="content">
+              <div id="quizContainer">
+                <div className="modal-header">
+                  <h5>
+                    <i className="fa fa-question-circle" Style="color:yellow" />
+                    <span>   <img className="rounded mx-auto d-block"
 
-                    src={i === 0 ? Q1 : (i === 1) ? Q2 : (i === 2) ? Q3 : (i === 3) ? Q4 : (i === 4) ? Q5 : (i === 5) ? Q6 : ''}
-                    alt="question"
-                  /> </span>
-                  <br />
-                  <h3><span className="label label-warning">{question}</span></h3>
-                </h5>
+                      src={i === 0 ? Q1 : (i === 1) ? Q2 : (i === 2) ? Q3 : (i === 3) ? Q4 : (i === 4) ? Q5 : (i === 5) ? Q6 : ''}
+                      alt="question"
+                    /> </span>
+                    <br />
+                    <span className="label label-default"><h3><strong>{question}</strong></h3></span>
+                  </h5>
 
-              </div>
-              <div className="modal-body">
-                <div className="quiz" id="quiz" data-toggle="buttons">
-                  <label className="btn btn-lg btn-info btn-block">
-                    <span className="btn-label">
-                      <input type="radio" name="option" value="1" />
-                      <br />
-                      <i className="fa fa-arrow-right" />
-                    </span>
-                    <span>{opt1}</span>
-                  </label>
-                  <label className="btn btn-lg btn-info btn-block">
-                    <span className="btn-label">
-                      <input type="radio" name="option" value="2" />
-                      <br />
-                      <i className="fa fa-arrow-right" />
-                    </span>
-                    <span>{opt2}</span>
-                  </label>
-                  <label className="btn btn-lg btn-info btn-block">
-                    <span className="btn-label">
-                      <input type="radio" name="option" value="3" />
-                      <br />
-                      <i className="fa fa-arrow-right" />
-                    </span>
-                    <span>{opt3}</span>
-                  </label>
-                  <label className="btn btn-lg btn-info btn-block">
-                    <span className="btn-label">
-                      <input type="radio" name="option" value="4" />
-                      <br />
-                      <i className="fa fa-arrow-right" />
-                    </span>
-                    <span>{opt4}</span>
-                  </label>
-                  <br />
-                  <button
-                    className="btn btn-success pull-right btn-primary"
-                    onClick={this.next.bind(this)}
-                  >
-                    Next Question <i className="fa fa-angle-double-right" />
-                  </button>
+                </div>
+                <div className="modal-body">
+                  <div className="quiz" id="quiz" data-toggle="buttons" Style="color:yellow" >
+                    <label className="btn btn-lg  btn-block" Style="color:yellow">
+                      <span className="btn-label">
+                        <input type="radio" name="option" value="1" />
+                        <br />
+                        <i className="fa fa-arrow-right" />
+                      </span>
+                      <span Style="color:black">{opt1}</span>
+                    </label>
+                    <label className="btn btn-lg  btn-block" Style="color:yellow" >
+                      <span className="btn-label">
+                        <input type="radio" name="option" value="2" />
+                        <br />
+                        <i className="fa fa-arrow-left" />
+                      </span>
+                      <span Style="color:black">{opt2}</span>
+                    </label>
+                    <label className="btn btn-lg  btn-block" Style="color:yellow" >
+                      <span className="btn-label">
+                        <input type="radio" name="option" value="3" />
+                        <br />
+                        <i className="fa fa-arrow-up" />
+                      </span>
+                      <span Style="color:black">{opt3}</span>
+                    </label>
+                    <label className="btn btn-lg  btn-block" Style="color:yellow" >
+                      <span className="btn-label" >
+                        <input type="radio" name="option" value="4" />
+                        <br />
+                        <i className="fa fa-arrow-down" />
+                      </span>
+                      <span Style="color:black">{opt4}</span>
+                    </label>
+                    <br />
+                    <button
+                      className="btn btn-light pull-right"
+                      onClick={this.next.bind(this)}
+                    >
+                      Next Question <i className="fa fa-angle-double-right" />
+                    </button>
 
-                  <br />
-                  <br />
+                    <br />
+                    <br />
+                  </div>
                 </div>
               </div>
-            </div>
-            <div id="resultContainer" style={{ display: "none" }}>
-              <div className="modal-header">
-                <h2>{currentQuesObj.quizName}</h2>
-                <button
-                  className="btn btn-secondary pull-right"
-                  onClick={() => {
-                    this.props.backToDashboard(false);
-                  }}
-                >
-                  Goto Dashboard <i className="fa fa-undo" />
-                </button>
-              </div>
-              <div className="modal-body">
-                <h3>{currentQuesObj.tests[currentTestIndex].name}</h3>
+              <div id="resultContainer" style={{ display: "none" }}>
+                <div className="modal-header">
+                  <h2>{currentQuesObj.quizName}</h2>
+                  <button Style="color:black"
+                    className="btn btn-secondary pull-right"
+                    onClick={() => {
+                      this.props.backToDashboard(false);
+                    }}
+                  >
+                    Goto Dashboard <i className="fa fa-undo" Style="color:yellow" />
+                  </button>
+                </div>
+                <div className="modal-body">
+                  <h3>{currentQuesObj.tests[currentTestIndex].name}</h3>
 
-                <p>Questions: {currentQuesObj.tests[currentTestIndex].questions}</p>
-                {score < 50 ? (
-                  <h3>Your Eye Scored {score}% , You need to consult a doctor immediately.</h3>
-                ) : (
-                    <h3>Your eye sight is perfectly fine ! Your Eye Scored {score}%</h3>
-                  )}
-                <hr />
+                  <p>Questions: {currentQuesObj.tests[currentTestIndex].questions}</p>
+                  {score < 50 ? (
+                    <h3>Your Eye Scored {score}% , You need to consult a doctor immediately.</h3>
+                  ) : (
+                      <h3>Your eye sight is perfectly fine ! Your Eye Scored {score}%</h3>
+                    )}
+                  <hr />
 
+                </div>
               </div>
             </div>
           </div>

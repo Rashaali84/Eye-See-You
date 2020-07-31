@@ -184,7 +184,7 @@ class QuizList extends Component {
                     </p>
 
                     <button
-                      className="btn btn-secondary"
+                      className="btn btn-light"
                       onClick={() => {
                         this.setState({
                           renderMCQs: true,
@@ -203,7 +203,7 @@ class QuizList extends Component {
         </div>
         <br />
         <div class="text-right mb-3">
-          <button className="btn btn-secondary" onClick={this.back}>
+          <button className="btn btn-light" onClick={this.back}>
             Back <i className="fa fa-backward" />
           </button>
         </div>
@@ -235,7 +235,7 @@ class QuizList extends Component {
                       It has {qList.tests} sub-tests , Please read the below instructions before starting.
                     </p>
                     <button
-                      className="btn btn-secondary"
+                      className="btn btn-light"
                       onClick={this.updateQuizInfoState.bind(this, index)}
                     >
                       Next <i className=" fa fa-paper-plane" />
@@ -259,7 +259,7 @@ class QuizList extends Component {
       currentTestIndex
     } = this.state;
     return (
-      <div>
+      <div >
         {renderSelectedTestObj ? ( // the set of tests aleady fetched ?
           this.renderQuizInfo()
         ) : renderMCQs ? ( // the sub-test is selected ? 
