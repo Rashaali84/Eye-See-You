@@ -22,15 +22,25 @@ const handlers = {
       res.json(rows);
     });
   },
+  getBrands: async (req, res) => {
+    const sql = `select * from brands`;
+    db.all(sql, (err, rows) => {
+      if (err) {
+        res.status(400).json({ error: err.message });
+        return;
+      }
+      res.json(rows);
+    });
+  },
   getTestmonials: async (req, res) => {
     const sql = `SELECT * FROM testimonials`;
 
     db.all(sql, (err, rows) => {
       if (err) {
-        res.status(400).json({ "error": err.message });
+        res.status(400).json({ error: err.message });
         return;
       }
-      res.json(rows)
+      res.json(rows);
     });
   },
   postTestmonials: async (req, res) => {
@@ -43,13 +53,12 @@ const handlers = {
 
     db.all(sql, (err, rows) => {
       if (err) {
-        res.status(400).json({ "error": err.message });
+        res.status(400).json({ error: err.message });
         return;
       }
-      res.json(rows)
+      res.json(rows);
     });
-  }
-}
-
+  },
+};
 
 module.exports = handlers;
