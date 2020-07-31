@@ -84,11 +84,11 @@ class Question extends Component {
     const { question, opt1, opt2, opt3, opt4, score, i } = this.state;
     const { currentQuesObj, currentTestIndex } = this.props;
     return (
-      <div class="container-fluid">
-        <div class="row">
-          <div className="col-lg-12 col-md-6 col-xs-12">
-            <div className="col" id="content">
-              <div id="quizContainer">
+      <div className="container">
+        <div className="row content">
+          <div className="col-lg-12 d-flex justify-content-center">
+            <div className="col-lg-12 d-flex justify-content-center" id="content">
+              <div id="quizContainer" >
                 <div className="modal-header">
                   <h5>
                     <i className="fa fa-question-circle" Style="color:yellow" />
@@ -150,6 +150,7 @@ class Question extends Component {
                 </div>
               </div>
               <div id="resultContainer" style={{ display: "none" }}>
+
                 <div className="modal-header">
                   <h2>{currentQuesObj.quizName}</h2>
                   <button Style="color:black"
@@ -161,7 +162,8 @@ class Question extends Component {
                     Goto Dashboard <i className="fa fa-undo" Style="color:yellow" />
                   </button>
                 </div>
-                <div className="modal-body">
+                <div className="modal-body" >
+
                   <h3>{currentQuesObj.tests[currentTestIndex].name}</h3>
 
                   <p>Questions: {currentQuesObj.tests[currentTestIndex].questions}</p>
@@ -171,8 +173,8 @@ class Question extends Component {
                       <h3>Your eye sight is perfectly fine ! Your Eye Scored {score}%</h3>
                     )}
                   <hr />
-
                 </div>
+
               </div>
             </div>
           </div>
