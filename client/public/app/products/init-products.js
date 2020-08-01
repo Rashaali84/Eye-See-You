@@ -18,7 +18,7 @@ window.onload = () => {
     .catch((err) => console.error(err));
 };
 
-function CreateBrandList(product) {
+function CreateBrandList(id) {
   let brands = fetch("/api/brands/", {
     method: "GET",
   })
@@ -32,30 +32,33 @@ function CreateBrandList(product) {
       return brands;
     })
     .catch((err) => console.error(err));
-  let rows = `<div class="row">
-              <div class="col-lg-3 col-md-6">
+  let rows = `<div class="col-lg-3 col-md-6">
               <div class="box">
               <ul>`;
   for (let i = 0; i < brands.length; i++) {
-    if (brands.product_id == product) {
+    if (brands.product_id == id) {
       rows += `<li><i class="bx bx-chevron-right"></i>${brands[i].brand_title}</li>`;
     }
   }
   console.log(rows);
-  return rows + "</div></div></div>";
+  let parent = document.getElementById("products");
+  let divContainer = document.createElement("div");
+  divContainer.className = "row";
+  divContainer.innerHTML = rows + "</ul></div></div>";
+  parent.after(divContainer);
 }
 
 function CreateTableFromJson(jsonRows) {
-  let rows = `</ul><div class="row">`;
+  let rows = `<div class="row" id="products">`;
 
   for (var i = 0; i < jsonRows.length; i++) {
-    rows += `  <div class="col-lg-3 col-md-6">
-            <div class="box" onmouseover=CreateBrandList(${jsonRows[i].product_id})>
-              <h3>${jsonRows[i].product_name}</h3>
-              <h4>min <sup>$</sup>${jsonRows[i].product_price}</h4>
-              <p>${jsonRows[i].product_desc}</p>
-            </div>
-          </div>`;
+    rows += `<div class="col-lg-3 col-md-6" id="${jsonRows[i].product_name}">
+              <div class="box" onmouseover=CreateBrandList(${jsonRows[i].product_id})>
+                <h3>${jsonRows[i].product_name}</h3>
+                <h4>min <sup>$</sup>${jsonRows[i].product_price}</h4>
+                <p>${jsonRows[i].product_desc}</p>
+              </div>
+            </div>`;
   }
   console.log(rows);
   return rows + "</div>";
