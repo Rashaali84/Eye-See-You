@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Question from "../Questions/Question"
 import coverPic1 from "../../images/questions/quiz.jpg";
 import coverPic2 from "../../images/questions/test.png";
-
+import '../../App.css';
 class QuizList extends Component {
   constructor() {
     super();
@@ -184,7 +184,7 @@ class QuizList extends Component {
                     </p>
 
                     <button
-                      className="btn btn-light"
+                      className="test-vision"
                       onClick={() => {
                         this.setState({
                           renderMCQs: true,
@@ -203,7 +203,7 @@ class QuizList extends Component {
         </div>
         <br />
         <div class="text-right mb-3">
-          <button className="btn btn-light" onClick={this.back}>
+          <button className="test-vision" onClick={this.back}>
             Back <i className="fa fa-backward" />
           </button>
         </div>
@@ -222,7 +222,7 @@ class QuizList extends Component {
           {quiz_list.map((qList, index) => {
             return (
               <div className="col-8" key={`${qList}_${index}`}>
-                <div className="card" style={{ width: "25rem" }}>
+                <div className="card" style={{ width: "28rem" }}>
                   <img
                     className="card-img-top"
                     src={coverPic1}
@@ -235,7 +235,7 @@ class QuizList extends Component {
                       It has {qList.tests} sub-tests , Please read the below instructions before starting.
                     </p>
                     <button
-                      className="btn btn-light"
+                      className="test-vision"
                       onClick={this.updateQuizInfoState.bind(this, index)}
                     >
                       Next <i className=" fa fa-paper-plane" />
