@@ -35,7 +35,7 @@ Clone this repository and start using it with your visual-studio editor.
 
 ## Screen Capture of Project
 
-![Screenshot](https://github.com/Rashaali84/Eye-See-You/blob/master/eye see you.png)
+![Screenshot](https://github.com/Rashaali84/Eye-See-You/blob/master/eye%20see%20you.png)
 
 ## Architect Design Diagram
 ![Architect-Design](https://github.com/Rashaali84/Eye-See-You/blob/master/Architect%20Design.png)
