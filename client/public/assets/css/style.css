@@ -14,11 +14,11 @@ body {
 }
 
 a {
-  color: #fbf04c;
+  color: #ebe049;
 }
 
 a:hover {
-  color: #fbf04c;
+  color: #ebe049;
 
   text-decoration: none;
 }
@@ -51,13 +51,13 @@ h6 {
   width: 40px;
   height: 40px;
   border-radius: 4px;
-  background: #fbf04c;
+  background: #ebe049;
   color: #fff;
   transition: all 0.4s;
 }
 
 .back-to-top i:hover {
-  background: #fbf04c;
+  background: #ebe049;
   color: #fff;
 }
 
@@ -138,7 +138,7 @@ h6 {
 .nav-menu a:hover,
 .nav-menu .active > a,
 .nav-menu li:hover > a {
-  color: #fbf04c;
+  color: #ebe049;
   -webkit-text-stroke: 0.5px black;
 }
 
@@ -178,7 +178,7 @@ h6 {
 .nav-menu .drop-down ul a:hover,
 .nav-menu .drop-down ul .active > a,
 .nav-menu .drop-down ul li:hover > a {
-  color: #fbf04c;
+  color: #ebe049;
 }
 
 .nav-menu .drop-down > a:after {
@@ -275,7 +275,7 @@ h6 {
 .mobile-nav a:hover,
 .mobile-nav .active > a,
 .mobile-nav li:hover > a {
-  color: #fbf04c;
+  color: #ebe049;
   text-decoration: none;
 }
 
@@ -336,7 +336,6 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background-color: rgba(63, 73, 83, 0.8);
   overflow: hidden;
   position: relative;
   filter: blur(10px);
@@ -375,14 +374,11 @@ h6 {
 
 #hero .container {
   text-align: center;
-
-  filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.404);
 }
 #hero .container:hover {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.404);
   transform: scale(1.2);
-  filter: blur(0);
-  transition: 1s;
 }
 
 #hero h2 {
@@ -444,7 +440,7 @@ h6 {
   color: #4a4a4a;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
-  background: #fbf04c;
+  background: #ebe049;
 }
 
 @media (max-width: 992px) {
@@ -508,7 +504,7 @@ section {
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: #fbf04c;
+  background: #ebe049;
   margin: 4px 10px;
 }
 
@@ -615,7 +611,7 @@ section {
   top: 7px;
   position: absolute;
   font-size: 20px;
-  color: #fbf04c;
+  color: #ebe049;
 }
 
 .about .content p:last-child {
@@ -662,7 +658,7 @@ section {
 
 .services .icon-box i {
   float: left;
-  color: #fbf04c;
+  color: #ebe049;
   border: 10px grey;
   font-size: 40px;
 }
@@ -686,7 +682,7 @@ section {
 }
 
 .services .icon-box:hover h4 a {
-  color: #fbf04c;
+  color: #ebe049;
 }
 
 /*--------------------------------------------------------------
@@ -720,7 +716,7 @@ section {
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
   color: #fff;
-  background: #fbf04c;
+  background: #ebe049;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -897,7 +893,7 @@ section {
 }
 
 .team .member .social a:hover {
-  background: #fbf04c;
+  background: #ebe049;
 }
 
 .team .member .social a + a {
@@ -962,12 +958,12 @@ section {
 }
 
 .features .nav-link:hover {
-  color: #fbf04c;
+  color: #ebe049;
 }
 
 .features .nav-link.active {
-  color: #fbf04c;
-  border-color: #fbf04c;
+  color: #ebe049;
+  border-color: #ebe049;
 }
 
 .features .tab-pane.active {
@@ -1026,7 +1022,7 @@ section {
 
 .products h4 {
   font-size: 36px;
-  color: #fbf04c;
+  color: #ebe049;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   margin-bottom: 20px;
@@ -1058,7 +1054,7 @@ section {
 }
 
 .products ul i {
-  color: #fbf04c;
+  color: #ebe049;
   font-size: 18px;
   padding-right: 4px;
 }
@@ -1076,7 +1072,7 @@ section {
 }
 
 .products .btn-buy {
-  background: #fbf04c;
+  background: #ebe049;
   display: inline-block;
   padding: 8px 35px 9px 35px;
   border-radius: 4px;
@@ -1090,12 +1086,12 @@ section {
 }
 
 .products .btn-buy:hover {
-  background: #fbf04c;
+  background: #ebe049;
 }
 
 .products .featured h3 {
   color: #fff;
-  background: #fbf04c;
+  background: #ebe049;
 }
 
 .products .advanced {
@@ -1107,7 +1103,7 @@ section {
   z-index: 1;
   font-size: 14px;
   padding: 1px 0 3px 0;
-  background: #fbf04c;
+  background: #ebe049;
   color: #fff;
 }
 
@@ -1149,13 +1145,13 @@ section {
   padding: 40px;
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
   position: relative;
-  background: #fbf04c;
+  background: #ebe049;
 }
 
 .testimonials .testimonial-item .testimonial-img {
   width: 90px;
   border-radius: 50px;
-  border: 6px solid #fbf04c;
+  border: 6px solid #ebe049;
   float: left;
   margin: 0 10px 0 0;
 }
@@ -1169,13 +1165,13 @@ section {
 
 .testimonials .testimonial-item h4 {
   font-size: 14px;
-  color: #fbf04c;
+  color: #ebe049;
   margin: 0;
 }
 
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
-  color: #fbf04c;
+  color: #ebe049;
   font-size: 26px;
 }
 
@@ -1244,7 +1240,7 @@ section {
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
   background: #556270;
-  color: #fbf04c;
+  color: #ebe049;
 }
 
 .contact .php-email-form {
@@ -1258,7 +1254,7 @@ section {
 
 .contact .php-email-form .validate {
   display: none;
-  color: #fbf04c;
+  color: #ebe049;
   margin: 0 0 15px 0;
   font-weight: 400;
   font-size: 13px;
@@ -1267,7 +1263,7 @@ section {
 .contact .php-email-form .error-message {
   display: none;
   color: #fff;
-  background: #fbf04c;
+  background: #ebe049;
   text-align: left;
   padding: 15px;
   font-weight: 600;
@@ -1328,24 +1324,24 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #fbf04c;
+  background: #ebe049;
   border: 0;
   padding: 10px 24px;
-  color: #fff;
+  color: #556270;
   transition: 0.4s;
   border-radius: 4px;
 }
 .contact button[type="submit"] {
-  background: #fbf04c;
+  background: #ebe049;
   border: 0;
   padding: 10px 24px;
-  color: #fff;
+  color: #556270;
   transition: 0.4s;
   border-radius: 4px;
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #fbf04c;
+  background: #ebe049;
 }
 
 @-webkit-keyframes animate-loading {
@@ -2012,7 +2008,7 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #fbf04c;
+  background: #ebe049;
   color: #fff;
   text-decoration: none;
 }
@@ -2087,13 +2083,13 @@ section {
   font-size: 16px;
   padding: 0 20px 2px 20px;
   background: #ebe049;
-  color: #fff;
+  color: #556270;
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
 }
 
 #footer .footer-top .footer-newsletter form input[type="submit"]:hover {
-  background: #fbf04c;
+  background: #ebe049;
 }
 
 #footer .copyright {

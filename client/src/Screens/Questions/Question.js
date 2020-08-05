@@ -91,7 +91,7 @@ class Question extends Component {
               <div id="quizContainer" >
                 <div className="modal-header">
                   <h5>
-                    <i className="fa fa-question-circle" Style="color:yellow" />
+                    <i className="fa fa-question-circle" Style="color:#ebe049" />
                     <span>   <img className="rounded mx-auto d-block"
 
                       src={i === 0 ? Q1 : (i === 1) ? Q2 : (i === 2) ? Q3 : (i === 3) ? Q4 : (i === 4) ? Q5 : (i === 5) ? Q6 : ''}
@@ -103,33 +103,33 @@ class Question extends Component {
 
                 </div>
                 <div className="modal-body">
-                  <div className="quiz" id="quiz" data-toggle="buttons" Style="color:yellow" >
-                    <label className="btn btn-lg  btn-block" Style="color:yellow">
-                      <span className="btn-label">
+                  <div className="quiz" id="quiz" data-toggle="buttons" Style="color:#ebe049" >
+                    <label className="btn btn-lg  btn-block" Style="color:#ebe049">
+                      <span className="btn-label" Style="background:#A9A9A9">
                         <input type="radio" name="option" value="1" />
                         <br />
                         <i className="fa fa-arrow-right" />
                       </span>
                       <span Style="color:black">{opt1}</span>
                     </label>
-                    <label className="btn btn-lg  btn-block" Style="color:yellow" >
-                      <span className="btn-label">
+                    <label className="btn btn-lg  btn-block" Style="color:#ebe049" >
+                      <span className="btn-label" Style="background:#A9A9A9">
                         <input type="radio" name="option" value="2" />
                         <br />
                         <i className="fa fa-arrow-left" />
                       </span>
                       <span Style="color:black">{opt2}</span>
                     </label>
-                    <label className="btn btn-lg  btn-block" Style="color:yellow" >
-                      <span className="btn-label">
+                    <label className="btn btn-lg  btn-block" Style="color:#ebe049" >
+                      <span className="btn-label" Style="background:#A9A9A9">
                         <input type="radio" name="option" value="3" />
                         <br />
                         <i className="fa fa-arrow-up" />
                       </span>
                       <span Style="color:black">{opt3}</span>
                     </label>
-                    <label className="btn btn-lg  btn-block" Style="color:yellow" >
-                      <span className="btn-label" >
+                    <label className="btn btn-lg  btn-block" Style="color:#ebe049" >
+                      <span className="btn-label" Style="background:#A9A9A9">
                         <input type="radio" name="option" value="4" />
                         <br />
                         <i className="fa fa-arrow-down" />
@@ -138,7 +138,7 @@ class Question extends Component {
                     </label>
                     <br />
                     <button
-                      className="btn btn-light pull-right"
+                      className="test-vision pull-right"
                       onClick={this.next.bind(this)}
                     >
                       Next Question <i className="fa fa-angle-double-right" />
@@ -153,13 +153,13 @@ class Question extends Component {
 
                 <div className="modal-header">
                   <h2>{currentQuesObj.quizName}</h2>
-                  <button Style="color:black"
+                  <button
                     className="btn btn-secondary pull-right"
                     onClick={() => {
                       this.props.backToDashboard(false);
                     }}
                   >
-                    Goto Dashboard <i className="fa fa-undo" Style="color:yellow" />
+                    Goto Dashboard <i className="fa fa-undo" Style="color:#556270" />
                   </button>
                 </div>
                 <div className="modal-body" >

@@ -23,8 +23,12 @@
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 label.btn {
@@ -75,7 +79,21 @@ label .btn-label {
   margin-top: 10px;
 } */
 
-.margin{
+.margin {
   margin-top: 50px;
   padding: 20px;
+}
+.test-vision {
+  background: #ebe049;
+  border: 0;
+  padding: 10px 24px;
+  color: #556270;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+.btn-secondary {
+  background: #ebe049;
+  color: #556270;
+  transition: 0.4s;
+  border-radius: 4px;
 }
